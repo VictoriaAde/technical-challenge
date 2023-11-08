@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "filename": "image1.jpg",
+      "size": "2 MB",
+      "timeOfUpload": "2023-10-30 14:30:00",
+      "id": 1
+    },
+    {
+      "filename": "image1.jpg",
+      "size": "2 MB",
+      "timeOfUpload": "2023-10-30 14:30:00",
+      "id": 2
+    },
+    {
+      "filename": "image1.jpg",
+      "size": "2 MB",
+      "timeOfUpload": "2023-10-30 14:30:00",
+      "id": 3
+    }
+  ],
+  "predictions": []
+}
