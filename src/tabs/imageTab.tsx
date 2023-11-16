@@ -23,7 +23,9 @@ const ImageTable: React.FC = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null
   );
-  const [predictions, setPredictions] = useState<{}[]>([]);
+
+  // The type indicates that the array will contain objects of any shape.
+  const [predictions, setPredictions] = useState<Prediction[]>([]);
 
   const handlePredictClick = (index: number) => {
     setSelectedImageIndex(index);
@@ -31,7 +33,7 @@ const ImageTable: React.FC = () => {
   };
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const uploadedFile = e.target.files[0];
+    const uploadedFile = e.target.files?.[0];
 
     if (uploadedFile) {
       const newImageData = [...imageData];
@@ -64,7 +66,7 @@ const ImageTable: React.FC = () => {
       image: imageData[selectedImageIndex || 0], // Use the selected image data
     };
 
-    fetch("http://localhost:8000/predict", {
+    fetch("http://localhost:8000/predictions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

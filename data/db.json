@@ -19,5 +19,86 @@
       "id": 3
     }
   ],
-  "predictions": []
+  "predictions": [
+    {
+      "title": "ff",
+      "description": "f",
+      "image": {
+        "filename": "image1.jpg",
+        "size": "2 MB",
+        "timeOfUpload": "2023-10-30 14:30:00"
+      },
+      "id": 1
+    },
+    {
+      "title": "fv",
+      "description": "re",
+      "image": {
+        "filename": "image1.jpg",
+        "size": "2 MB",
+        "timeOfUpload": "2023-10-30 14:30:00"
+      },
+      "id": 2
+    },
+    {
+      "title": "Blessing",
+      "description": "mentee",
+      "image": {
+        "filename": "image2.png",
+        "size": "1.5 MB",
+        "timeOfUpload": "2023-10-30 15:45:00"
+      },
+      "id": 3
+    },
+    {
+      "title": "victor",
+      "description": "ffffffoi",
+      "image": {
+        "filename": "image1.jpg",
+        "size": "2 MB",
+        "timeOfUpload": "2023-10-30 14:30:00"
+      },
+      "id": 4
+    },
+    {
+      "title": "c",
+      "description": "c",
+      "image": {
+        "filename": "image1.jpg",
+        "size": "2 MB",
+        "timeOfUpload": "2023-10-30 14:30:00"
+      },
+      "id": 5
+    },
+    {
+      "title": "f",
+      "description": "cc",
+      "image": {
+        "filename": "image1.jpg",
+        "size": "2 MB",
+        "timeOfUpload": "2023-10-30 14:30:00"
+      },
+      "id": 6
+    },
+    {
+      "title": "vv",
+      "description": "",
+      "image": {
+        "filename": "image1.jpg",
+        "size": "2 MB",
+        "timeOfUpload": "2023-10-30 14:30:00"
+      },
+      "id": 7
+    },
+    {
+      "title": "v",
+      "description": "f",
+      "image": {
+        "filename": "image1.jpg",
+        "size": "2 MB",
+        "timeOfUpload": "2023-10-30 14:30:00"
+      },
+      "id": 8
+    }
+  ]
 }

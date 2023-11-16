@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import PredictionModal from "./predictionModal";
 
 interface Prediction {
+  image: any;
   title: string;
   description: string;
   timestamp: string;
@@ -50,18 +52,26 @@ interface PredictionRowProps {
 }
 
 const PredictionRow: React.FC<PredictionRowProps> = ({ data }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleViewClick = () => {
-    // Handle the VIEW button click for a specific prediction
+    setIsModalOpen(true);
   };
 
   return (
     <tr>
       <td>{data.title}</td>
       <td>{data.description}</td>
-      <td>{data.timestamp}</td>
+      <td>{data.image.timeOfUpload}</td>
       <td>
         <button onClick={handleViewClick}>VIEW</button>
       </td>
+      {isModalOpen && (
+        <PredictionModal
+          prediction={data}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
     </tr>
   );
 };
