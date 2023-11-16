@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import PredictionModal from "./predictionModal";
 
 interface Prediction {
-  image: any;
-  title: string;
-  description: string;
-  timestamp: string;
-  predictions: PredictionItem[];
+  id?: number;
+  image?: [];
+  title?: string;
+  description?: string;
+  timeOfUpload?: string;
+  predictions?: PredictionItem[];
 }
 
 interface PredictionItem {
@@ -62,7 +63,7 @@ const PredictionRow: React.FC<PredictionRowProps> = ({ data }) => {
     <tr>
       <td>{data.title}</td>
       <td>{data.description}</td>
-      <td>{data.image.timeOfUpload}</td>
+      <td>{data?.image?.timeOfUpload}</td>
       <td>
         <button onClick={handleViewClick}>VIEW</button>
       </td>
